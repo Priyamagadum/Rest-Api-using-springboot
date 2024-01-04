@@ -27,4 +27,21 @@ Voting System API
 - **Get Winner:**
   - Method: GET
   - URL: http://localhost:8080/getwinner
+  
+# Project Architecture and Design
 
+This project follows a simple Spring Boot architecture with the following components:
+
+1. **Controller (`CandidateController`):
+   - Handles incoming HTTP requests.
+   - Maps HTTP requests to corresponding methods in the `CandidateService`.
+
+2. **Model (`Candidate`):
+   - Represents the candidate entity with name and vote count.
+
+3. **Service (`CandidateService`):
+   - Implements business logic.
+   - Uses local variables to store data.
+
+4. **Application Entry Point (`YourApplication`):
+   - Contains the main method to start the Spring Boot application.
